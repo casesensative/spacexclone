@@ -1,5 +1,4 @@
 .navbar {
-  background-color: blueviolet;
   position: fixed;
   width: 100vw;
   height: 60px;
@@ -8,13 +7,11 @@
 }
 
 .leftnav {
-  background-color: burlywood;
   flex: 9;
 
 }
 
 .rightnav {
-  background-color: cadetblue;
   flex: 1;
 
 }
@@ -35,7 +32,7 @@
   height: 100%;
   text-align: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: flex-end;
 }
 
@@ -50,6 +47,7 @@
   display: inline-block;
   font: 14px 'Ropa Sans',Arial,Verdana,sans-serif;
   color: white;
+  margin-right: 40px;
 }
 
 .logo {
@@ -58,8 +56,7 @@
   height: 100px;
   position: relative;
   top: 39px;
-  filter: grayscale(100);
-  filter: brightness(100);
+  filter: invert();
 }
 
 .menuicon {
@@ -71,29 +68,183 @@
 }
 
 .flightest {
-  background-color: bisque;
+  background: 
+    url("https://www.spacex.com/static/images/backgrounds-2021/HP_SN11_Vertical_20210311_IMG_01221.webp")
+    40% center / cover
+    no-repeat
+    scroll;
   width: 100vw;
   height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
 
+.ftcontent {
+  min-height: 50px;
+  max-height: 500px;
+  max-width: 500px;
+  flex: 2;
+  margin-bottom: 300px;
+  margin-left: 160px;
 }
 
 .recentlaunch {
-  background-color: lightblue;
+  background: 
+    url("https://www.spacex.com/static/images/backgrounds-2021/HP_Star23_DSC_4468.webp")
+    40% center / cover
+    no-repeat
+    scroll;
   width: 100vw;
   height: 100vh;
 
+}
+
+.lcontent {
+  height: 84%;
+  width: 40%;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-bottom: 1%;
+  padding-left: 25%;
+  box-sizing: border-box;
 }
 
 .crew {
-  background-color: lightgray;
+  background: 
+    url("https://www.spacex.com/static/images/crew-1/dragon-window-desktop.webp")
+    40% center / cover
+    no-repeat
+    scroll;
+  width: 100vw;
+  height: 100vh;
+}
+
+.crewcontent {
+  height: 84%;
+  width: 45%;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-bottom: 1%;
+  padding-left: 25%;
+  box-sizing: border-box;
+}
+
+.simcontent {
+  height: 84%;
+  width: 45%;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-bottom: 1%;
+  padding-left: 25%;
+  box-sizing: border-box;
+}
+
+
+.simulator {
+  background: 
+    url("https://www.spacex.com/static/images/backgrounds/iss_game.webp")
+    40% center / cover
+    no-repeat
+    scroll;
   width: 100vw;
   height: 100vh;
 
 }
 
-.simulator {
-  background-color: lightpink;
+.footer {
+  background-color: black;
   width: 100vw;
-  height: 100vh;
+  height: 10vh;
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.footernav {
+  display: flex;
+
+}
+
+.flink {
+  color: white;
+  margin-left: 18px;
+  margin-right: 18px;
+  font: 13px 'Ropa Sans',Arial,Verdana,sans-serif;
+
+}
+
+.arrow {
+  width:10%;
+  height: 8%;
+  animation-name: arrowAnim;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  bottom: 40px;
+  left: 100px;
+
+}
+.arrowp {
+  background-color: white;
+  width: 2px;
+  height: 18px;
+  transform: rotate(45deg);
+}
+
+@keyframes arrowAnim {
+  0% { opacity: 0; }
+  30% { transform:translateY(0px); animation-timing-function: ease;}
+  50% { opacity: 1;}
+  100% { transform:translateY(40px); }
+}
+
+.ropa {
+  font: 22px 'Ropa Sans',Arial,Verdana,sans-serif;
+  color: white;
+  font-weight: 10;
+
+}
+
+.fillerbox {
+  flex: 1;
+  background-color: darkred;
+}
+
+.morebutton {
+  width: 160px;
+  height: 55px;
+  background-color: transparent;
+  border: 2px solid white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  top: 40px;
+  cursor: pointer;
+  color: white;
+  transition-property: background-color, color;
+  transition-duration: 2s, .5s;
+}
+
+.morebutton:hover {
+  background-color: white;
+  color: black;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 
 }
