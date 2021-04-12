@@ -2,7 +2,7 @@
   background-color: blueviolet;
   position: fixed;
   width: 100vw;
-  height: 4.5vh;
+  height: 60px;
   display: flex;
 
 }
@@ -19,19 +19,37 @@
 
 }
 
-.nav {
+.leftnavitems {
   width: 100%;
   height: 100%;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  position: relative;
+  right: 100px;
 }
 
-.link {
+.rightnavitems {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.leftlink {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 30px;
   font: 14px 'Ropa Sans',Arial,Verdana,sans-serif;
+  color: white;
+}
+
+.rightlink {
+  display: inline-block;
+  font: 14px 'Ropa Sans',Arial,Verdana,sans-serif;
+  color: white;
 }
 
 .logo {
@@ -40,7 +58,16 @@
   height: 100px;
   position: relative;
   top: 39px;
+  filter: grayscale(100);
+  filter: brightness(100);
 }
+
+.menuicon {
+  width: 30px;
+  height: 18px;
+  position: relative;
+  top: 4px;
+  filter: invert(100%);
 
 .flightest {
   background-color: bisque;
