@@ -68,6 +68,7 @@
   position: relative;
   top: 4px;
   filter: invert(100%);
+}
 
 .flightest {
   background-color: bisque;
