@@ -179,7 +179,14 @@
   margin-left: 18px;
   margin-right: 18px;
   font: 13px 'Ropa Sans',Arial,Verdana,sans-serif;
+  transition: color 1s,
+              opacity 1s;
 
+}
+
+.flink:hover {
+  color: rgb(34, 34, 34);
+  opacity: .6;
 }
 
 .arrow {
